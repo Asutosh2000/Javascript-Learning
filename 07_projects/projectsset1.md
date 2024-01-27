@@ -204,7 +204,6 @@ document.querySelector("#stop").addEventListener("click", stopChaningColor);
 ## project 6 solution code
 
 ```javascript
-console.log("Project 5");
 const insert = document.getElementById("insert");
 
 window.addEventListener("keydown", (e) => {
@@ -225,5 +224,45 @@ window.addEventListener("keydown", (e) => {
 </table>
 </div>
   `;
+});
+```
+
+## project 15 solution code
+
+```javascript
+const title = document.getElementById("title");
+const author = document.getElementById("author");
+const year = document.getElementById("year");
+const bookList = document.getElementById("book-list");
+const btn = document.querySelector(".btn");
+
+// solution One
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  //work on CRUD operation of DOM
+  const section = document.createElement("section");
+  const titleLi = document.createElement("li");
+  const authorLi = document.createElement("li");
+  const yearLi = document.createElement("li");
+  titleLi.textContent = title.value;
+  authorLi.textContent = author.value;
+  yearLi.textContent = year.value;
+  section.append(titleLi, authorLi, yearLi);
+  console.log("section", section);
+  bookList.appendChild(section);
+});
+
+// solution Two
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  //work on CRUD operation of DOM
+  const section = `
+  <section>
+    <li>${title.value}</li>
+    <li>${author.value}</li>
+    <li>${year.value}</li>
+  </section>
+`;
+  bookList.innerHTML = section;
 });
 ```

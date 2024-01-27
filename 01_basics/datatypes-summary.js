@@ -28,6 +28,7 @@ const myFunction = function () {
   console.log("Hello World");
 };
 
+console.log(typeof myFunction);
 console.log(typeof anotherId);
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++

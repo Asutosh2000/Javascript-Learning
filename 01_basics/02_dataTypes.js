@@ -2,8 +2,8 @@
 
 // alert(3 + 3); // we are using nodejs, not browser
 
-console.log(3 + 3);
-console.log("Hello World");
+// console.log(3 + 3);
+// console.log("Hello World");
 
 let name = "hitesh";
 let age = 21;
@@ -20,6 +20,11 @@ let state;
 
 // object
 
-console.log(typeof "asutosh");
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+// console.log(typeof "asutosh");
+// console.log(typeof undefined); // undefined
+// console.log(typeof null); // object // because it is used for referencing absence of a object
+
+// JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+// let x = 16 + 4 + "Volvo"; // return "20Volvo"
+// let x = "Volvo" + 16 + 4; // return "Volvo164"
+// console.log(x);
